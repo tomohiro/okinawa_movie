@@ -1,0 +1,16 @@
+沖縄県映画上映時間一覧
+================================================================================
+
+
+Description
+--------------------------------------------------------------------------------
+
+Sinatra on Heroku で運用している Web サービス.
+
+スターシアターズ系列の映画館と桜坂劇場の上映時間を閲覧することができます。
+
+
+### Link
+
+[http://okinawa-movie.heroku.com](http://okinawa-movie.heroku.com)
+[RSS Feed](http://okinawa-movie.heroku.com/feed.xml)
