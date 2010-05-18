@@ -98,10 +98,12 @@ body[orient="landscape"] > .toolbar > h1 {
     white-space: nowrap;
     background: none;
     -webkit-border-image: url(toolButton.png) 0 5 0 5;
+    -moz-border-image: url(toolButton.png) 0 5 0 5;
 }
 
 .blueButton {
     -webkit-border-image: url(blueButton.png) 0 5 0 5;
+    -moz-border-image: url(blueButton.png) 0 5 0 5;
     border-width: 0 5px;
 }
 
@@ -118,6 +120,7 @@ body[orient="landscape"] > .toolbar > h1 {
     max-width: 55px;
     border-width: 0 8px 0 14px;
     -webkit-border-image: url(backButton.png) 0 8 0 14;
+    -moz-border-image: url(backButton.png) 0 8 0 14;
 }
 
 .whiteButton,
@@ -324,6 +327,7 @@ fieldset > .row:last-child {
 .toggle {
     border: 1px solid #888888;
     -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     background: #FFFFFF url(toggle.png) repeat-x;
     font-size: 19px;
     font-weight: bold;
@@ -371,6 +375,7 @@ fieldset > .row:last-child {
     height: 28px;    
     border: 1px solid #888888;
     -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     background: #ffffff url(thumb.png) repeat-x;
 }
 

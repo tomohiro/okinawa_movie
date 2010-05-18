@@ -1,3 +1,4 @@
+!!!
 %html
   %head
     %meta(charset='UTF-8')
@@ -8,10 +9,10 @@
 
   %body
     %div.toolbar
-      %h1#pageTitle=@title
+      %h1#pageTitle
       %a#backButton.button(href='#')
 
-    %ul(title='作品リスト' selected='true')
+    %ul(title='Movies' selected='true')
       =@titles
 
     =@times
