@@ -7,18 +7,16 @@ set :haml, :format => :html5
 
 get '/' do
   @title = '沖縄県映画上映時間一覧'
-  @body  = '<ul>'
+  @titles = ''
+  @times  = ''
 
-  RSS::Parser.parse('feed.xml').items.each do |movie|
-    @body << "<li><a href='#{movie.link}'>#{movie.title}</a></li>"
-    @body << "<li>#{movie.description}</li>"
+  items = RSS::Parser.parse('public/feed.xml').items
+
+  items.each do |movie|
+    @titles << "<li><a href='##{movie.title}'>#{movie.title}</a></li>\n"
+    @times << "<ul id='#{movie.title}' title='#{movie.title}'><li>#{movie.description}</li></ul>\n"
   end
 
-  @body << '</ul>'
 
   haml :index
-end
-
-get '/feed.xml' do
-  open('feed.xml').read
 end
