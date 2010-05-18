@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>沖縄県映画上映時間一覧</title>
+    <link>http://okinawa-movie.heroku.com/</link>
+    <description>沖縄県内の映画の上映時間を配信しています</description>
+    <item>
+      <title>隣の家の少女</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 19:40</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.46162+09:00</dc:date>
+    </item>
+    <item>
+      <title>僕たちのプレイボール</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 11:20</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.458787+09:00</dc:date>
+    </item>
+    <item>
+      <title>すべては海になる</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 16:30</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.455591+09:00</dc:date>
+    </item>
+    <item>
+      <title>ボーイズ・オン・ザ・ラン</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 13:50&amp;#160; 19:30</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.452822+09:00</dc:date>
+    </item>
+    <item>
+      <title>フローズン・リバー</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 11:00&amp;#160; 13:20</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.450032+09:00</dc:date>
+    </item>
+    <item>
+      <title>スイートリトルライズ</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 14:20&amp;#160; 17:00</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.446714+09:00</dc:date>
+    </item>
+    <item>
+      <title>こまどり姉妹がやって来る ヤァ! ヤァ! ヤァ!</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 10:40&amp;#160; 12:30</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.443826+09:00</dc:date>
+    </item>
+    <item>
+      <title>アンナと過ごした4日間</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 15:30&amp;#160; 17:50&amp;#160; 20:00</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.441069+09:00</dc:date>
+    </item>
+    <item>
+      <title>ハートロッカー</title>
+      <link>http://hurtlocker.jp/</link>
+      <description>[サザンプレックス]  10:50～13:10  13:40～16:00  20:55～23:15&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.438222+09:00</dc:date>
+    </item>
+    <item>
+      <title>シャーロック・ホームズ(字幕版・日本語吹替版)</title>
+      <link>http://wwws.warnerbros.co.jp/sherlock/</link>
+      <description>[サザンプレックス]  14:05～16:20  18:00～20:15&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.434818+09:00</dc:date>
+    </item>
+    <item>
+      <title>ソラニン</title>
+      <link>http://solanin-movie.jp/</link>
+      <description>[シネマパレット]  13:20～15:35  17:50～20:05  20:20～22:35&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.432035+09:00</dc:date>
+    </item>
+    <item>
+      <title>フィリップ、きみを愛してる!</title>
+      <link>http://iloveyou.asmik-ace.co.jp/</link>
+      <description>[シネマパレット]  11:20～13:05  15:50～17:35&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.429163+09:00</dc:date>
+    </item>
+    <item>
+      <title>第9地区</title>
+      <link>http://d-9.gaga.ne.jp</link>
+      <description>[ミハマ7プレックス]  11:30～13:30  21:15～23:15&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.425772+09:00</dc:date>
+    </item>
+    <item>
+      <title>シャッターアイランド(字幕版・日本語吹替版)</title>
+      <link>http://www.s-island.jp/</link>
+      <description>[シネマQ]  11:00～13:25  15:40～18:05  21:00～23:25&lt;br&gt;[サザンプレックス]  11:25～13:50  14:15～16:40  20:10～22:35&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.422898+09:00</dc:date>
+    </item>
+    <item>
+      <title>ゼブラーマン　ゼブラシティの逆襲</title>
+      <link>http://www.zeb2.jp/index.html</link>
+      <description>[サザンプレックス]  16:00～17:55&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.414929+09:00</dc:date>
+    </item>
+    <item>
+      <title>ウルフマン</title>
+      <link>http://wolfman-movie.jp/</link>
+      <description>[シネマQ]  16:15～18:05  21:30～23:20&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.409659+09:00</dc:date>
+    </item>
+    <item>
+      <title>のだめカンタービレ最終楽章　　　後編</title>
+      <link>http://www.nodame-movie.jp/index.html</link>
+      <description>[シネマQ]  10:40～12:55  13:25～15:40  18:45～21:00&lt;br&gt;[ミハマ7プレックス]  11:10～13:20  13:50～16:00&lt;br&gt;[サザンプレックス]  11:30～13:40  20:40～22:50&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.402183+09:00</dc:date>
+    </item>
+    <item>
+      <title>アーサーと魔王マルタザールの逆襲</title>
+      <link>http://www.arthur-movie.jp/top.html</link>
+      <description>[サザンプレックス]  18:05～19:45&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.39517+09:00</dc:date>
+    </item>
+    <item>
+      <title>矢島美容室　ＴＨＥ　ＭＯVIE</title>
+      <link>http://www.yazima.jp/</link>
+      <description>[シネマQ]  13:55～15:45  18:35～20:25  20:55～22:45&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.387279+09:00</dc:date>
+    </item>
+    <item>
+      <title>劇場版 銀魂　新訳 紅桜篇</title>
+      <link>http://wwws.warnerbros.co.jp/gintama/</link>
+      <description>[サザンプレックス]  16:30～18:15  18:40～20:25&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.379705+09:00</dc:date>
+    </item>
+    <item>
+      <title>名探偵コナン　天空の難破船</title>
+      <link>http://www.conan-movie.jp/index.html</link>
+      <description>[シネマQ]  10:50～12:45  13:15～15:10  18:35～20:30&lt;br&gt;[ミハマ7プレックス]  16:30～18:20  18:55～20:45&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.372226+09:00</dc:date>
+    </item>
+    <item>
+      <title>運命のボタン</title>
+      <link>http://www.unmeino.jp/pc.html</link>
+      <description>[シネマQ]  10:40～12:45  13:20～15:25  16:00～18:05  18:40～20:45  21:20～23:25&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.365357+09:00</dc:date>
+    </item>
+    <item>
+      <title>タイタンの戦い　(字幕版・日本語吹替版)</title>
+      <link>http://wwws.warnerbros.co.jp/clashofthetitans/</link>
+      <description>[シネマQ]  10:30～12:25  13:00～14:55  15:30～17:25  18:00～19:55  20:30～22:25&lt;br&gt;[ミハマ7プレックス]  10:30～12:25  13:00～14:55  15:30～17:25  18:00～19:55  20:30～22:25&lt;br&gt;[サザンプレックス]  11:00～12:55  15:00～16:55  18:15～20:10  20:35～22:30&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.357812+09:00</dc:date>
+    </item>
+    <item>
+      <title>てぃだかんかん　海とサンゴと小さな奇跡</title>
+      <link>http://tida.goo.ne.jp/</link>
+      <description>[シネマQ]  10:45～12:55  13:30～15:40  16:15～18:25  19:00～21:10  21:45～23:55&lt;br&gt;[ミハマ7プレックス]  10:40～12:50  13:25～15:35  16:10～18:20  18:55～21:05  21:40～23:50&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.350301+09:00</dc:date>
+    </item>
+    <item>
+      <title>劇場版TRICK 霊能力者バトルロイヤル</title>
+      <link>http://www.yamada-ueda.com/</link>
+      <description>[シネマQ]  10:15～12:25  13:00～15:10  15:45～17:55  18:30～20:40  21:15～23:25&lt;br&gt;[ミハマ7プレックス]  11:05～13:10  13:45～15:50  16:25～18:30  19:05～21:10  21:45～23:50&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.342632+09:00</dc:date>
+    </item>
+    <item>
+      <title>アリス・イン・ワンダーランド(字幕版・日本語吹替版)</title>
+      <link>http://www.disney.co.jp/movies/alice/</link>
+      <description>[ミハマ7プレックス]  14:00～15:55  16:35～18:30  19:10～21:05  21:45～23:40&lt;br&gt;[シネマQ]  16:10～18:10&lt;br&gt;[サザンプレックス]  10:55～12:55  13:20～15:20  15:50～17:50  18:20～20:20  20:50～22:50&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.335336+09:00</dc:date>
+    </item>
+    <item>
+      <title>アリス・イン・ワンダーランド　　　　　（デジタル3Ｄ）(日本語吹替版)</title>
+      <link>http://www.disney.co.jp/movies/alice/</link>
+      <description>[シネマQ]  10:00～12:00  12:40～14:40  15:20～17:20  18:00～20:00  20:40～22:40&lt;br&gt;[ミハマ7プレックス]  10:20～12:15  12:55～14:50  15:30～17:25  18:05～20:00  20:40～22:35&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.32706+09:00</dc:date>
+    </item>
+    <item>
+      <title>過速スキャンダル</title>
+      <link>http://kasoku-scandal.jp/</link>
+      <description>[シネマパレット]  11:40～13:35  13:50～15:45  16:00～17:55  18:10～20:05  20:30～22:25&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.319368+09:00</dc:date>
+    </item>
+    <item>
+      <title>ザ・エッグ　～ロマノフの秘宝を狙え～</title>
+      <link>http://www.heat-matsuri.com/</link>
+      <description>[サザンプレックス]  11:20～13:15  13:40～15:35  18:20～20:15  21:00～22:55&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.31237+09:00</dc:date>
+    </item>
+    <item>
+      <title>パリより愛をこめて</title>
+      <link>http://www.frompariswithlovefilm.com/</link>
+      <description>[ミハマ7プレックス]  11:30～13:10  13:45～15:25  16:00～17:40  18:15～19:55  20:30～22:10&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.304869+09:00</dc:date>
+    </item>
+    <item>
+      <title>グリーン・ゾーン</title>
+      <link>http://green-zone.jp/</link>
+      <description>[シネマQ]  10:10～12:15  12:50～14:55  15:40～17:45  18:20～20:25  21:00～23:05&lt;br&gt;[ミハマ7プレックス]  10:30～12:30  13:10～15:10  15:50～17:50  18:30～20:30  21:10～23:10&lt;br&gt;[サザンプレックス]  11:20～13:25  14:10～16:15  18:10～20:15  20:40～22:45&lt;br&gt;</description>
+      <pubDate>Tue, 18 May 2010 18:23:21 +0900</pubDate>
+      <dc:date>2010-05-18T18:23:21.296756+09:00</dc:date>
+    </item>
+  </channel>
+</rss>

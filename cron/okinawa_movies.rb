@@ -52,14 +52,14 @@ class OkinawaMovies
           item = {}
           item[:title] = movie_info.at('h3/a').text
           item[:link]  = movie_info.at('div.pic_block/a[@target="_blank"]').attributes['href']
-          item[:time] = []
+          item[:time]  = ''
 
           (movie_info/'table.set_d').each do |screen|
             movie = ["[#{screen.at('th.cinema/img').attributes['alt']}]"]
             (screen/'td').each do |time|
               movie << time.text unless time.text.to_i == 0
             end
-            item[:time] << movie.join('  ')
+            item[:time] << movie.join('  ') + '<br>'
           end
           results << item
         end
@@ -76,4 +76,8 @@ class OkinawaMovies
 
     results
   end
+end
+
+if __FILE__ == $0
+  puts OkinawaMovies.rss
 end

@@ -3,18 +3,15 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
-require 'okinawa_movies'
-
 set :haml, :format => :html5
 
 get '/' do
   @title = '沖縄県映画上映時間一覧'
   @body  = '<ul>'
 
-  rss = OkinawaMovies.rss
-  rss.items.each do |movie|
+  RSS::Parser.parse('feed.xml').items.each do |movie|
     @body << "<li><a href='#{movie.link}'>#{movie.title}</a></li>"
-    movie.description.each { |theater| @body << "<li>#{theater}</li>" }
+    @body << "<li>#{movie.description}</li>"
   end
 
   @body << '</ul>'
@@ -23,5 +20,5 @@ get '/' do
 end
 
 get '/feed.xml' do
-  OkinawaMovies.rss.to_s
+  open('feed.xml').read
 end
