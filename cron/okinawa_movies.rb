@@ -28,6 +28,9 @@ class OkinawaMovies
       maker.channel.description = '沖縄県内の映画の上映時間を配信しています'
       maker.channel.link = 'http://okinawa-movie.heroku.com/'
 
+      maker.image.title = maker.channel.title
+      maker.image.url = 'http://okinawa-movie.heroku.com/apple-touch-icon.png'
+
       movies.each do |movie|
         maker.items.new_item do |item|
           item.link = movie[:link]
