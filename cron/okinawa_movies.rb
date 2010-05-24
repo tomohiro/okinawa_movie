@@ -36,6 +36,8 @@ class OkinawaMovies
           item.link = movie[:link]
           item.title = movie[:title]
           item.description = movie[:time]
+          item.source.url = movie[:source_url]
+          item.source.content = movie[:source_content]
           item.date = Time.now
         end
       end
@@ -49,10 +51,10 @@ class OkinawaMovies
       html = Nokogiri::HTML(open(theater).read)
 
       if theater.include? 'startheaters'
-        results << {:title => 'スターシアターズ系列', :link => theater}
-
         (html/'div.unit_block').each do |movie_info|
           item = {}
+          item[:source_url] = theater
+          item[:source_content] = 'スターシアターズ'
           item[:title] = movie_info.at('h3/a').text.gsub('　', '')
           item[:link]  = movie_info.at('div.pic_block/a[@target="_blank"]').attributes['href']
           item[:time]  = ''
@@ -67,10 +69,10 @@ class OkinawaMovies
           results << item
         end
       else
-        results << {:title => '桜坂劇場', :link => theater}
-
         (html/'div.movie').each do |info|
           item = {}
+          item[:source_url] = theater
+          item[:source_content] = '桜坂劇場'
           item[:title] = (info/'div.name/a/span[@dir="ltr"]').text
           item[:link]  = 'http://www.sakura-zaka.com/'
           item[:time]  = "[桜坂劇場] #{info.inner_html.scan(/(..:..+?)</).last}"
