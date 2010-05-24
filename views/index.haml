@@ -6,16 +6,29 @@
     %meta(name='viewport' content='width=device-width; initial-scale=1.0; user-scalable=1;')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
     %link(rel='shortcut icon' href='favicon.ico')
-    %link(rel='stylesheet' media='screen' href='iui/iui.css')
-    %script(src='iui/iuix.js')
-    %script(src='scripts/google-analytics.js')
+    %link(rel='stylesheet' media='screen' href='stylesheets/iphone.css')
+    %script(src='scripts/iphone.js')
+    %script(src='/scripts/google-analytics.js')
 
   %body
-    %div.toolbar
-      %h1#pageTitle
-      %a#backButton.button(href='#')
+    %div#header
+      %h1 上映作品
 
-    %ul(title='Movies' selected='true')
-      = @movies
+    %h1 スターシアターズ
+    %ul
+      - @star_theaters.each do |movie|
+        %li.arrow
+          %a(href="schedule/#{movie.title}")= movie.title
 
-    = @times
+    %h1 桜坂劇場
+    %ul
+      - @sakurazaka.each do |movie|
+        %li.arrow
+          %a(href="schedule/#{movie.title}")= movie.title
+
+    %p
+      %strong powered by
+      %a(href='http://heroku.com') Heroku
+      %a(href='http://www.sinatrarb.com/intro-jp.html') Sinatra
+      %a(href='http://code.google.com/p/iphone-universal') UiUIKit
+          
