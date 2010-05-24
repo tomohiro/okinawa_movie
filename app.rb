@@ -13,7 +13,7 @@ get '/' do
       @movies << "<li class='group'>#{movie.title}</li>\n"
     else
       @movies << "<li><a href='##{index}'>#{movie.title}</a></li>\n"
-      @times  << "<ul id='#{index}' title='映画館別上映時間'>\n"
+      @times  << "<ul id='#{index}' title='上映時間'>\n"
       @times  << "<li class='group'><a href='#{movie.link}' target='_blank' title='#{movie.title}'>#{movie.title}</a></li>\n"
       movie.description.split('<br>').each do |time|
         @times << "<li>#{time}</li>\n"
