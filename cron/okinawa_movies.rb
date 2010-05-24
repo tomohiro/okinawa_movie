@@ -53,7 +53,7 @@ class OkinawaMovies
 
         (html/'div.unit_block').each do |movie_info|
           item = {}
-          item[:title] = movie_info.at('h3/a').text
+          item[:title] = movie_info.at('h3/a').text.gsub('　', '')
           item[:link]  = movie_info.at('div.pic_block/a[@target="_blank"]').attributes['href']
           item[:time]  = ''
 
