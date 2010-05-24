@@ -12,5 +12,6 @@ Sinatra on Heroku で運用している Web サービス。
 
 ### Link
 
-- [http://okinawa-movie.heroku.com](http://okinawa-movie.heroku.com)
+- [for iPhone/Android](http://okinawa-movie.heroku.com)
+- [for Mobile](http://okinawa-movie.heroku.com/m)
 - [RSS Feed](http://okinawa-movie.heroku.com/feed.xml)
