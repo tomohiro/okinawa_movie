@@ -3,17 +3,14 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
-set :haml, :format => :html5
 
 get '/' do
   @movies = ''
   @times  = ''
   @google = google
+
   index = 0
-
-  items = RSS::Parser.parse('public/feed.xml').items
-
-  items.each do |movie|
+  movies do |movie|
     if movie.description.nil?
       @movies << "<li class='group'>#{movie.title}</li>"
     else
@@ -22,8 +19,25 @@ get '/' do
     end
     index += 1
   end
-
+  set :haml, {:format => :html5}
   haml :index
+end
+
+get '/m' do
+  @movies = ''
+  @google = google
+
+  movies do |movie|
+    next if movie.description.nil?
+    @movies << "<dt>#{movie.title}</dt>\n"
+    @movies << "<dd>#{movie.description}</dd>\n"
+  end
+
+  haml :mobile
+end
+
+def movies
+  RSS::Parser.parse('public/feed.xml').items.each { |m| yield m }
 end
 
 def google
