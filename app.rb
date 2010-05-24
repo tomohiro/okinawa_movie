@@ -17,7 +17,6 @@ end
 get '/schedule/:title' do
   movie = Movies.new.by_title params[:title]
   @title = movie.title
-  @schedule = movie.description.split('<br>') 
 
   @schedule_list = []
   movie.description.split('<br>').each do |info|
@@ -28,7 +27,7 @@ get '/schedule/:title' do
       @schedule_list << OpenStruct.new({
         :screen => screen,
         :start  => times.split('～')[0],
-        :end => times.split('～')[1] || nil
+        :end    => times.split('～')[1] || nil
       })
     end
   end
