@@ -1,44 +1,44 @@
-require 'rss'
+require 'ostruct'
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'movies'
+
+set :haml, {:format => :html5}
 
 get '/' do
-  @movies = ''
-  @times  = ''
+  @movies = Movies.new
+  @star_theaters = @movies.by_screen 'startheaters'
+  @sakurazaka = @movies.by_screen 'google'
 
-  index = 0
-  movies do |movie|
-    if movie.description.nil?
-      @movies << "<li class='group'>#{movie.title}</li>\n"
-    else
-      @movies << "<li><a href='##{index}'>#{movie.title}</a></li>\n"
-      @times  << "<ul id='#{index}' title='上映時間'>\n"
-      @times  << "<li class='group'><a href='#{movie.link}' target='_blank' title='#{movie.title}'>#{movie.title}</a></li>\n"
-      movie.description.split('<br>').each do |time|
-        @times << "<li>#{time}</li>\n"
-      end
-      @times << "</ul>\n"
-    end
-    index += 1
-  end
-
-  set :haml, {:format => :html5}
   haml :index
 end
 
-get '/m' do
-  @movies = ''
+get '/schedule/:title' do
+  movie = Movies.new.by_title params[:title]
+  @title = movie.title
+  @schedule = movie.description.split('<br>') 
 
-  movies do |movie|
-    next if movie.description.nil?
-    @movies << "<dt>#{movie.title}</dt>\n"
-    @movies << "<dd>#{movie.description}</dd>\n"
+  @schedule_list = []
+  movie.description.split('<br>').each do |info|
+    info = info.split(' ')
+    screen = info.shift
+
+    info.each do |times|
+      @schedule_list << OpenStruct.new({
+        :screen => screen,
+        :start  => times.split('～')[0],
+        :end => times.split('～')[1] || nil
+      })
+    end
   end
 
-  haml :mobile
+  haml :schedule
 end
 
-def movies
-  RSS::Parser.parse('public/feed.xml').items.each { |m| yield m }
+get '/m' do
+  @movies = Movies.new
+
+  set :haml, {:format => :html4}
+  haml :mobile
 end
