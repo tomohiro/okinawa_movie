@@ -14,8 +14,12 @@ get '/' do
   items = RSS::Parser.parse('public/feed.xml').items
 
   items.each do |movie|
-    @movies << "<li><a href='##{index}'>#{movie.title}</a></li>\n"
-    @times << "<ul id='#{index}' title='#{movie.title}'><li>#{movie.description}</li></ul>\n"
+    if movie.description.nil?
+      @movies << "<li class='group'>#{movie.title}</li>"
+    else
+      @movies << "<li><a href='##{index}'>#{movie.title}</a></li>\n"
+      @times  << "<ul id='#{index}' title='#{movie.title}'><li>#{movie.description}</li></ul>\n"
+    end
     index += 1
   end
 

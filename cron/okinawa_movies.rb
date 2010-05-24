@@ -28,8 +28,6 @@ class OkinawaMovies
       maker.channel.description = '沖縄県内の映画の上映時間を配信しています'
       maker.channel.link = 'http://okinawa-movie.heroku.com/'
 
-      maker.items.do_sort = true
-
       movies.each do |movie|
         maker.items.new_item do |item|
           item.link = movie[:link]
@@ -48,6 +46,8 @@ class OkinawaMovies
       html = Nokogiri::HTML(open(theater).read)
 
       if theater.include? 'startheaters'
+        results << {:title => 'スターシアターズ系列', :link => theater}
+
         (html/'div.unit_block').each do |movie_info|
           item = {}
           item[:title] = movie_info.at('h3/a').text
@@ -64,6 +64,8 @@ class OkinawaMovies
           results << item
         end
       else
+        results << {:title => '桜坂劇場', :link => theater}
+
         (html/'div.movie').each do |info|
           item = {}
           item[:title] = (info/'div.name/a/span[@dir="ltr"]').text
