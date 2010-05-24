@@ -25,7 +25,6 @@ end
 
 get '/m' do
   @movies = ''
-  @google = google
 
   movies do |movie|
     next if movie.description.nil?
