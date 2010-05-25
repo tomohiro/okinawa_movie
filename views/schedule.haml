@@ -3,18 +3,26 @@
   %head
     %title= "#{@title} - 沖縄映画上映時間一覧"
     %meta(charset='UTF-8')
-    %meta(name='viewport' content='width=device-width; initial-scale=1.0; user-scalable=1;')
+    %meta(name='viewport' content='width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
     %link(rel='shortcut icon' href='favicon.ico')
     %link(rel='stylesheet' media='screen' href='/stylesheets/iphone.css')
     %script(src='/scripts/iphone.js')
     %script(src='/scripts/google-analytics.js')
 
-  %body#metal
+  %body#plastic
     %div#header
       %h1= @title
       %a#backButton(href='/') Back
 
     %ul
       - @schedule_list.each do |schedule|
-        <li><a href='#'>#{schedule.start}<em>#{schedule.screen}</em><small>#{schedule.end}</small></a></li>
+        %li
+          %a(href='#')
+            = "#{schedule.screen} #{schedule.start}"
+            %small= schedule.end
+    %p
+      %strong powered by
+      %a(href='http://heroku.com') Heroku
+      %a(href='http://www.sinatrarb.com/intro-jp.html') Sinatra
+      %a(href='http://code.google.com/p/iphone-universal') UiUIKit

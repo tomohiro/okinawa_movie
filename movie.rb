@@ -1,6 +1,6 @@
 require 'rss'
 
-class Movies
+class Movie
   def initialize
     @movies = RSS::Parser.parse('public/feed.xml').items
   end
@@ -13,11 +13,11 @@ class Movies
     @movies.each { |m| yield m }
   end
 
-  def by_screen(screen)
+  def find_by_screen(screen)
     @movies.find_all { |item| item.source.to_s.include? screen }
   end
 
-  def by_title(title)
-    @movies.find { |movie| title == movie.title }
+  def find_by_title(title)
+    @movies.find { |movie| movie.title.include? title }
   end
 end
