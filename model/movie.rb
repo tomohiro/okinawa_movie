@@ -36,7 +36,7 @@ class Movie < Sequel::Model
       ENV['TZ'] = 'Asia/Tokyo'
       filter do |movie|
         movie.title = self[id].title
-        movie.start > Time.now.strftime('%H:%m')
+        movie.start > Time.now.strftime('%H:%M')
       end
     end
   end
