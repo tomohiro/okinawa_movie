@@ -16,15 +16,15 @@
 
     %h1 スターシアターズ
     %ul
-      - @star_theaters.each do |movie|
+      - @startheaters.each do |movie|
         %li.arrow
-          %a(href="showtime/#{movie.title}")= movie.title
+          %a(href="showtime/#{movie.id}")= movie.title
 
     %h1 桜坂劇場
     %ul
       - @sakurazaka.each do |movie|
         %li.arrow
-          %a(href="showtime/#{movie.title}")= movie.title
+          %a(href="showtime/#{movie.id}")= movie.title
 
     %h1 About the author
     %ul

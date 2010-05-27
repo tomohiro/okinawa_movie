@@ -1,14 +1,12 @@
 !!!
 %html
   %head
-    %title æ²–ç¸„æ˜ ç”»ä¸Šæ˜ æ™‚é–“ä¸€è¦§
-    %meta(http-equiv='content-type' content='text/html' charset='UTF-8')
+    %title ‰«“ê‰f‰æã‰fŠÔˆê——
+    %meta(http-equiv='content-type' content='text/html' charset='Shift_JIS')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
 
   %body
-    %h1 æ²–ç¸„æ˜ ç”»ä¸Šæ˜ æ™‚é–“ä¸€è¦§
-
+    %h1 ‰«“ê‰f‰æã‰fŠÔˆê——
     %dl
       - @movies.each do |movie|
-        %dt= movie.title
-        %dd= movie.description
+        %dt= movie.title.tosjis

@@ -16,11 +16,15 @@
       %a#backButton(href='/') Back
 
     %ul
-      - @showtimes.each do |showtime|
-        %li
-          %a(href='#')
-            = "#{showtime.theater} #{showtime.start}"
-            %small= showtime.end
+      - if @movie.count == 0
+        %li 本日の上映は終了しました
+      - else
+        - @movie.each do |showtime|
+          %li
+            %a(href='#')
+              = "#{showtime.theater} #{showtime.start}"
+              %small= showtime.end
+
     %p
       %strong powered by
       %a(href='http://heroku.com') Heroku

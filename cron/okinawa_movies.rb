@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 
+require 'ostruct'
 require 'open-uri'
 require 'rss'
 require 'rubygems'
 require 'nokogiri'
+
+require 'model/movie.rb'
 
 $KCODE = 'u'
 
@@ -15,13 +18,38 @@ class OkinawaMovies
     ]
   end
 
+  def self.migrate
+    new.migrate
+  end
+
+  def migrate(reset = true)
+    Movie.reset if reset
+
+    get_showtime.each do |showtime|
+      showtime[:time].split('<br>').each do |info|
+        info = info.split(' ')
+        theater = info.shift
+
+        info.each do |time|
+          Movie.create({
+            :title   => showtime[:title],
+            :theater => theater,
+            :url     => showtime[:source_url],
+            :start   => time.split([0XFF5E].pack('U'))[0],
+            :end     => time.split([0XFF5E].pack('U'))[1],
+            :date    => Time.now
+          })
+        end
+      end
+    end
+  end
+
   def self.rss
     new.rss
   end
 
   def rss 
-    movies = get_screen_time
-
+    movies = 
     RSS::Maker.make('2.0') do |maker|
       maker.channel.about = 'http://okinawa-movie.heroku.com/feed.xml'
       maker.channel.title = '沖縄県映画上映時間一覧'
@@ -31,7 +59,7 @@ class OkinawaMovies
       maker.image.title = maker.channel.title
       maker.image.url = 'http://okinawa-movie.heroku.com/apple-touch-icon.png'
 
-      movies.each do |movie|
+      get_showtime .each do |movie|
         maker.items.new_item do |item|
           item.link = movie[:link]
           item.title = movie[:title]
@@ -44,7 +72,7 @@ class OkinawaMovies
     end
   end
 
-  def get_screen_time
+  def get_showtime
     results = []
 
     @theaters_uri.each do |theater|
@@ -86,5 +114,6 @@ class OkinawaMovies
 end
 
 if __FILE__ == $0
+  OkinawaMovies.migrate
   puts OkinawaMovies.rss
 end
