@@ -2,37 +2,40 @@ require 'ostruct'
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-require 'movie'
+require 'showtime'
 
 set :haml, {:format => :html5}
 
+before do
+  @showtime = ShowTime.new
+end
+
 get '/' do
-  movie = Movie.new
-  @star_theaters = movie.find_by_screen 'startheaters'
-  @sakurazaka = movie.find_by_screen 'google'
+  @star_theaters = @showtime.find_by_theater 'startheaters'
+  @sakurazaka = @showtime.find_by_theater 'google'
 
   haml :index
 end
 
-get '/schedule/:title' do
-  movie = Movie.new.find_by_title params[:title]
+get '/showtime/:title' do
+  movie = @showtime.find_by_title(params[:title])
   @title = movie.title
 
-  @schedule_list = []
+  @showtimes = []
   movie.description.split('<br>').each do |info|
     info = info.split(' ')
-    screen = info.shift
+    theater = info.shift
 
-    info.each do |times|
-      @schedule_list << OpenStruct.new({
-        :screen => screen,
-        :start  => times.split([0XFF5E].pack('U'))[0],
-        :end    => times.split([0XFF5E].pack('U'))[1] || nil
+    info.each do |time|
+      @showtimes << OpenStruct.new({
+        :theater => theater,
+        :start   => time.split([0XFF5E].pack('U'))[0],
+        :end     => time.split([0XFF5E].pack('U'))[1]
       })
     end
   end
 
-  haml :schedule
+  haml :showtime
 end
 
 get '/author' do
@@ -40,7 +43,7 @@ get '/author' do
 end
 
 get '/m' do
-  @movies = Movie.new.all
+  @movies = @showtime.all
 
   set :haml, {:format => :html4}
   haml :mobile
