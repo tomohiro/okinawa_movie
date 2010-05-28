@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'ostruct'
 require 'open-uri'
 require 'rss'
 require 'rubygems'
@@ -49,7 +48,6 @@ class OkinawaMovies
   end
 
   def rss 
-    movies = 
     RSS::Maker.make('2.0') do |maker|
       maker.channel.about = 'http://okinawa-movie.heroku.com/feed.xml'
       maker.channel.title = '沖縄県映画上映時間一覧'
