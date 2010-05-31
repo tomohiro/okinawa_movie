@@ -16,6 +16,9 @@
       %a#backButton(href='/') Back
 
     %ul
+      %li.image
+        %img(src='#{@poster}')
+
       - if @movie.count == 0
         %li 本日の上映は終了しました
       - else

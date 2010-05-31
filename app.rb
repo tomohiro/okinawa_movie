@@ -15,6 +15,7 @@ end
 
 get '/showtime/:id' do
   @title = Movie[params[:id]].title
+  @poster = Movie[params[:id]].poster
   @movie = Movie.showtime(params[:id])
 
   haml :showtime

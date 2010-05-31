@@ -11,6 +11,7 @@ class Movie < Sequel::Model
         primary_key :id
         string :title
         string :theater
+        string :poster
         string :url
         string :start
         string :end

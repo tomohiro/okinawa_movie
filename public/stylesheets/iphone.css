@@ -1,7 +1,7 @@
 /* 
 
 	Universal iPhone UI Kit 1.0
-	Author: Diego Martín Lafuente.
+	Author: Diego Mart蕷n Lafuente.
 	E-Mail: dlafuente@gmail.com
 	AIM: Minidixier
 	Licence: AGPLv3
@@ -847,6 +847,20 @@
 			}
 			
 			
+			body#plastic ul li.image {
+				background-color: transparent;
+                border: none;
+                margin-left: auto;
+                margin-right: auto;
+                height: 160px;
+                line-height: 160px;
+                width: 100px;
+            }
+			body#plastic ul li img {
+                width: 100px;
+                height: 150px;
+            }
+
 			body#plastic ul li small {
 				color: #3C3C3C;
 				text-shadow: rgb(211,211,211) 0 1px 0;
