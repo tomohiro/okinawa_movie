@@ -813,15 +813,16 @@
 		
 		body#plastic ul li {
 			-webkit-border-radius: 0;
-			border-top: 1px solid rgb(191,191,191);
-			border-bottom: 1px solid rgb(157,157,157);
+				background-color: rgb(152,152,152);
+				border-top: 1px solid rgb(181,181,181);
+				border-bottom: 1px solid rgb(138,138,138);
 		}
 		
 		
 			body#plastic ul li:nth-child(odd) {
-				background-color: rgb(152,152,152);
-				border-top: 1px solid rgb(181,181,181);
-				border-bottom: 1px solid rgb(138,138,138);
+			    border-top: 1px solid rgb(191,191,191);
+			    border-bottom: 1px solid rgb(157,157,157);
+		        background-color: rgb(173,173,173);
 			}
 		
 		
