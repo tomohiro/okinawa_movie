@@ -84,7 +84,7 @@ class OkinawaMovies
           item[:source_url] = theater
           item[:source_content] = 'スターシアターズ'
           item[:title] = movie_info.at('h3/a').text.gsub('　', '')
-          item[:link]  = movie_info.at('div.pic_block/a[@target="_blank"]').attributes['href']
+          item[:link]  = movie_info.at('div.pic_block/a[@target="_blank"]').attributes['href'] rescue theater
           item[:time]  = ''
 
           (movie_info/'table.set_d').each do |screen|
