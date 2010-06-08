@@ -13,7 +13,7 @@ class OkinawaMovies
   def initialize
     @theaters_uri = [
       'http://www.startheaters.jp/schedule',
-      'http://www.google.co.jp/movies?tid=3d1a4be489681836'
+      "http://www.google.com/movies?tid=3d1a4be489681836&near=#{URI.escape('那覇市')}"
     ]
   end
 
@@ -113,7 +113,7 @@ class OkinawaMovies
   end
 
   def get_image(title)
-    query = "http://www.google.com/movies?q=#{URI.escape(title.split(/ |・|\(|　/).first)}"
+    query = "http://www.google.com/movies?q=#{URI.escape(title.split(/ |・|\(|　/).first)}&near=#{URI.escape('那覇市')}"
     html = Nokogiri::HTML(open(query).read)
     image = html/'div.movie/div.header/div.img/img'
 
