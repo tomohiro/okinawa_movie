@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>沖縄県映画上映時間一覧</title>
+    <link>http://okinawa-movie.heroku.com/</link>
+    <description>沖縄県内の映画の上映時間を配信しています</description>
+    <image>
+      <url>http://okinawa-movie.heroku.com/apple-touch-icon.png</url>
+      <title>沖縄県映画上映時間一覧</title>
+      <link>http://okinawa-movie.heroku.com/</link>
+    </image>
+    <item>
+      <title>ザ・ウォーカー</title>
+      <link>http://www.thewalker.jp/</link>
+      <description>[ミハマ7プレックス]  10:30～12:35  13:10～15:15  15:50～17:55  18:30～20:35  21:10～23:15&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.873977+09:00</dc:date>
+    </item>
+    <item>
+      <title>マイ・ブラザー</title>
+      <link>http://my-brother.gaga.ne.jp/</link>
+      <description>[シネマパレット]  11:30～13:20  13:40～15:30  15:45～17:35  18:00～19:50  20:10～22:00&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.881137+09:00</dc:date>
+    </item>
+    <item>
+      <title>シェルター</title>
+      <link>http://www.shelter-movie.jp/index.html</link>
+      <description>[サザンプレックス]  11:30～13:30  15:00～17:00  18:25～20:25  20:50～22:50&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.888822+09:00</dc:date>
+    </item>
+    <item>
+      <title>＜3Ｄホラーナイト＞戦慄迷宮3Ｄ</title>
+      <link>http://3d-shock.asmik-ace.co.jp/</link>
+      <description>[シネマQ]  20:25～22:10&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.896247+09:00</dc:date>
+    </item>
+    <item>
+      <title>＜3Ｄホラーナイト＞ファイナルデッド・サーキッド3Ｄ(日本語吹替版)</title>
+      <link>http://fd-3d.gaga.ne.jp/</link>
+      <description>[ミハマ7プレックス]  20:10～21:40&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.903816+09:00</dc:date>
+    </item>
+    <item>
+      <title>アイアンマン2(字幕版・日本語吹替版)</title>
+      <link>http://www.ironman2.jp/</link>
+      <description>[シネマQ]  10:30～12:45  13:15～15:30  16:00～18:15  18:50～21:05  21:35～23:50&lt;br&gt;[ミハマ7プレックス]  10:20～12:30  13:10～15:20  16:00～18:10  18:50～21:00  21:40～23:50&lt;br&gt;[サザンプレックス]  10:25～12:35  13:00～15:10  15:35～17:45  18:10～20:20  20:45～22:55&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.911086+09:00</dc:date>
+    </item>
+    <item>
+      <title>ハンナ・モンタナ/ザ・コンサート【3D・字幕】</title>
+      <link>http://www.disney.co.jp/movies/hannah-jonas/</link>
+      <description>[シネマQ]  18:30～19:50&lt;br&gt;[ミハマ7プレックス]  18:00～19:25&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.918108+09:00</dc:date>
+    </item>
+    <item>
+      <title>ラスト・ソング</title>
+      <link>http://www.movies.co.jp/lastsong/</link>
+      <description>[ミハマ7プレックス]  10:15～12:10  12:45～14:40  18:05～20:00  20:35～22:30&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.925638+09:00</dc:date>
+    </item>
+    <item>
+      <title>仮面ライダー超・電王トリロジーＥＰＩＳＯＤＥ ＢＬＵＥ派遣イマジンはＮＥＷトラル</title>
+      <link>http://www.den-o-3.com</link>
+      <description>[サザンプレックス]  12:45～14:05  16:25～17:45  20:05～21:25&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.932797+09:00</dc:date>
+    </item>
+    <item>
+      <title>仮面ライダー超・電王トリロジーＥＰＩＳＯＤＥ ＲＥＤゼロのスタートウィンク</title>
+      <link>http://www.den-o-3.com</link>
+      <description>[サザンプレックス]  10:55～12:15  14:35～15:55  18:15～19:35&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.939888+09:00</dc:date>
+    </item>
+    <item>
+      <title>セックス・アンド・ザ・シティ2</title>
+      <link>http://wwws.warnerbros.co.jp/sexandthecity2/</link>
+      <description>[シネマQ]  10:30～13:05  13:35～16:10  18:20～20:55  21:25～0:00&lt;br&gt;[ミハマ7プレックス]  11:10～13:50  14:25～17:05  18:00～20:40  21:15～23:55&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.947566+09:00</dc:date>
+    </item>
+    <item>
+      <title>告白</title>
+      <link>http://kokuhaku-shimasu.jp/index.html</link>
+      <description>[シネマQ]  11:00～12:55  13:25～15:20  15:50～17:45  18:15～20:10  20:40～22:35&lt;br&gt;[サザンプレックス]  11:20～13:15  13:40～15:35  16:00～17:55  18:20～20:15  20:40～22:35&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.954954+09:00</dc:date>
+    </item>
+    <item>
+      <title>アリス・イン・ワンダーランド（デジタル3Ｄ）(日本語吹替版)</title>
+      <link>http://www.disney.co.jp/movies/alice/</link>
+      <description>[シネマQ]  10:40～12:35  13:10～15:05  15:40～17:35&lt;br&gt;[ミハマ7プレックス]  10:30～12:25  13:00～14:55  15:30～17:25&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.962349+09:00</dc:date>
+    </item>
+    <item>
+      <title>アリス・イン・ワンダーランド(字幕版・日本語吹替版)</title>
+      <link>http://www.disney.co.jp/movies/alice/</link>
+      <description>[サザンプレックス]  11:00～13:00  13:35～15:35  16:10～18:10  20:00～22:00&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.969989+09:00</dc:date>
+    </item>
+    <item>
+      <title>プリンス・オブ・ペルシャ 時間の砂(字幕版・日本語吹替版)</title>
+      <link>http://www.disney.co.jp/movies/persia-movie/</link>
+      <description>[ミハマ7プレックス]  11:00～13:05  13:40～15:45  16:20～18:25  19:00～21:05  21:40～23:45&lt;br&gt;[シネマQ]  13:50～15:55  16:30～18:35  19:05～21:10  21:40～23:45&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.977035+09:00</dc:date>
+    </item>
+    <item>
+      <title>フラワーズ</title>
+      <link>http://flowers-movie.jp/index.html</link>
+      <description>[シネマQ]  10:20～12:20  13:05～15:05  15:50～17:50  18:35～20:35  21:20～23:20&lt;br&gt;[ミハマ7プレックス]  13:45～15:45  18:55～20:55&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.984694+09:00</dc:date>
+    </item>
+    <item>
+      <title>グリーン・ゾーン</title>
+      <link>http://green-zone.jp/</link>
+      <description>[シネマQ]  11:00～13:05  15:50～17:55  18:25～20:30  21:00～23:05&lt;br&gt;[ミハマ7プレックス]  11:10～13:10  16:20～18:20  21:30～23:30&lt;br&gt;[サザンプレックス]  13:00～15:05  20:40～22:45&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.99175+09:00</dc:date>
+    </item>
+    <item>
+      <title>アウトレイジ</title>
+      <link>http://office-kitano.co.jp/outrage/main.html</link>
+      <description>[シネマQ]  11:10～13:10  13:40～15:40  16:10～18:10  18:40～20:40  21:10～23:10&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:45 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:45.999199+09:00</dc:date>
+    </item>
+    <item>
+      <title>劇場版TRICK 霊能力者バトルロイヤル</title>
+      <link>http://www.yamada-ueda.com/</link>
+      <description>[シネマQ]  16:10～18:20  21:30～23:40&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.0075+09:00</dc:date>
+    </item>
+    <item>
+      <title>てぃだかんかん海とサンゴと小さな奇跡</title>
+      <link>http://tida.goo.ne.jp/</link>
+      <description>[シネマQ]  10:50～13:00  13:30～15:40&lt;br&gt;[ミハマ7プレックス]  10:10～12:20  12:50～15:00  15:30～17:40  20:40～22:50&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.01547+09:00</dc:date>
+    </item>
+    <item>
+      <title>RAILWAYS49歳で電車の運転士になった男の話</title>
+      <link>http://www.railways-movie.jp/</link>
+      <description>[シネマQ]  10:20～12:40  13:05～15:25&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.02433+09:00</dc:date>
+    </item>
+    <item>
+      <title>座頭市THE LAST</title>
+      <link>http://www.the-last-1.jp/</link>
+      <description>[ミハマ7プレックス]  15:15～17:35&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.07828+09:00</dc:date>
+    </item>
+    <item>
+      <title>孤高のメス</title>
+      <link>http://www.kokouno-mes.com</link>
+      <description>[サザンプレックス]  11:10～13:25  13:50～16:05&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.081+09:00</dc:date>
+    </item>
+    <item>
+      <title>ボックス！</title>
+      <link>http://www.box-movie.jp/index.html</link>
+      <description>[サザンプレックス]  15:30～17:45  20:10～22:25&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.08486+09:00</dc:date>
+    </item>
+    <item>
+      <title>のだめカンタービレ最終楽章後編</title>
+      <link>http://www.nodame-movie.jp/index.html</link>
+      <description>[サザンプレックス]  17:00～19:10&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.08798+09:00</dc:date>
+    </item>
+    <item>
+      <title>ハートロッカー</title>
+      <link>http://hurtlocker.jp/</link>
+      <description>[シネマパレット]  11:20～13:40  20:00～22:20&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.09101+09:00</dc:date>
+    </item>
+    <item>
+      <title>【セレクトムービー】愛と青春の旅だち</title>
+      <link>http://www.startheaters.jp/schedule</link>
+      <description>[シネマQ]  18:45～20:50&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.09403+09:00</dc:date>
+    </item>
+    <item>
+      <title>【セレクトムービー】クレイマー、クレイマー</title>
+      <link>http://www.startheaters.jp/schedule</link>
+      <description>[ミハマ7プレックス]  18:10～20:00&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.09738+09:00</dc:date>
+    </item>
+    <item>
+      <title>【セレクトムービー】スタンド・バイ・ミー</title>
+      <link>http://www.startheaters.jp/schedule</link>
+      <description>[サザンプレックス]  11:00～12:35  18:10～19:45&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.100486+09:00</dc:date>
+    </item>
+    <item>
+      <title>【セレクトムービー】戦場にかける橋</title>
+      <link>http://www.startheaters.jp/schedule</link>
+      <description>[シネマパレット]  14:00～16:40  16:55～19:35&lt;br&gt;</description>
+      <source url="http://www.startheaters.jp/schedule">スターシアターズ</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.104415+09:00</dc:date>
+    </item>
+    <item>
+      <title>キャタピラー</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 11:20� 13:20� 15:30� 17:50� 19:50</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.109995+09:00</dc:date>
+    </item>
+    <item>
+      <title>新しい人生のはじめかた</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 13:00� 15:10� 17:20</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.113067+09:00</dc:date>
+    </item>
+    <item>
+      <title>渇き</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 10:50� 16:20</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.120447+09:00</dc:date>
+    </item>
+    <item>
+      <title>すべて彼女のために</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 20:30</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.127522+09:00</dc:date>
+    </item>
+    <item>
+      <title>劇場版 ブレイク ブレイド 第一章「覚醒ノ刻」</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 19:30</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.132288+09:00</dc:date>
+    </item>
+    <item>
+      <title>実録・連合赤軍 あさま山荘への道程〈みち〉</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 19:30</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.138195+09:00</dc:date>
+    </item>
+    <item>
+      <title>時をかける少女</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 13:40</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.14406+09:00</dc:date>
+    </item>
+    <item>
+      <title>泣きながら生きて</title>
+      <link>http://www.sakura-zaka.com/</link>
+      <description>[桜坂劇場] 10:40</description>
+      <source url="http://www.google.com/movies?tid=3d1a4be489681836&amp;near=%E9%82%A3%E8%A6%87%E5%B8%82">桜坂劇場</source>
+      <pubDate>Thu, 24 Jun 2010 20:59:46 +0900</pubDate>
+      <dc:date>2010-06-24T20:59:46.147963+09:00</dc:date>
+    </item>
+  </channel>
+</rss>

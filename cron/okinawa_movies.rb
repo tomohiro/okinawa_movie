@@ -101,7 +101,7 @@ class OkinawaMovies
           item = {}
           item[:source_url] = theater
           item[:source_content] = '桜坂劇場'
-          item[:title] = (info/'div.name/a/span[@dir="ltr"]').text
+          item[:title] = (info/'div.name/a').text
           item[:link]  = 'http://www.sakura-zaka.com/'
           item[:time]  = "[桜坂劇場] #{info.inner_html.scan(/(..:..+?)</).last}"
           results << item
@@ -113,7 +113,7 @@ class OkinawaMovies
   end
 
   def get_image(title)
-    query = "http://www.google.com/movies?q=#{URI.escape(title.split(/ |・|\(|　/).first)}&near=#{URI.escape('那覇市')}"
+    query = "http://www.google.com/movies?q=#{URI.escape(title.gsub('ザ・', '').split(/ |・|\(|　/).first)}&near=#{URI.escape('那覇市')}"
     html = Nokogiri::HTML(open(query).read)
     image = html/'div.movie/div.header/div.img/img'
 
