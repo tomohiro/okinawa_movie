@@ -31,3 +31,9 @@ get '/m' do
   set :haml, {:format => :html4}
   haml :mobile
 end
+
+get '/test' do
+  require 'open-uri'
+  require 'nokogiri'
+  Nokogiri::HTML(open('http://twitter.com/Tomohiro').read).to_s
+end
