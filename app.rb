@@ -32,8 +32,7 @@ get '/m' do
   haml :mobile
 end
 
-get '/test' do
-  require 'open-uri'
-  require 'nokogiri'
-  Nokogiri::HTML(open('http://twitter.com/Tomohiro').read).to_s
+get '/cron' do
+  require 'cron/okinawa_movies.rb'
+  OkinawaMovies.migrate
 end
