@@ -2,7 +2,7 @@ require 'kconv'
 require 'sequel'
 
 Sequel::Model.plugin :schema
-Sequel.connect 'sqlite://db/movies.db'
+Sequel.connect 'sqlite://tmp/movies.db'
 
 class Movie < Sequel::Model
   class << self
