@@ -36,8 +36,8 @@ class OkinawaMovies
             :theater => theater.toutf8,
             :poster  => image.toutf8,
             :url     => showtime[:source_url].toutf8,
-            :start   => (time.split([0XFF5E].pack('U'))[0]),
-            :end     => (time.split([0XFF5E].pack('U'))[1]),
+            :start   => (time.split([0XFF5E].pack('U'))[0]).toutf8,
+            :end     => (time.split([0XFF5E].pack('U'))[1]) || '',
             :date    => Time.now
           })
         end
