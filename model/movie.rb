@@ -9,12 +9,12 @@ class Movie < Sequel::Model
     def setup 
       set_schema do
         primary_key :id
-        string :title
-        string :theater
-        string :poster
-        string :url
-        string :start
-        string :end
+        text :title
+        text :theater
+        text :poster
+        text :url
+        text :start
+        text :end
         timestamp :date
       end
     end
