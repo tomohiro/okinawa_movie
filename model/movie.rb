@@ -46,6 +46,7 @@ class Movie < Sequel::Model
       titles.each do |t|
         movies << filter(:title => t.title).first
       end
+      movies
     end
   end
 
