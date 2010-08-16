@@ -34,10 +34,10 @@ class OkinawaMovies
           Movie.create({
             :title   => showtime[:title].toutf8,
             :theater => theater.toutf8,
-            :poster  => image,
-            :url     => showtime[:source_url],
-            :start   => time.split([0XFF5E].pack('U'))[0],
-            :end     => time.split([0XFF5E].pack('U'))[1],
+            :poster  => image.toutf8,
+            :url     => showtime[:source_url].toutf8,
+            :start   => (time.split([0XFF5E].pack('U'))[0]),
+            :end     => (time.split([0XFF5E].pack('U'))[1]),
             :date    => Time.now
           })
         end
