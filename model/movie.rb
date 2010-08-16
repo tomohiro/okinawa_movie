@@ -26,16 +26,26 @@ class Movie < Sequel::Model
     end
 
     def startheaters
-      filter(:theater => %w[[シネマQ] [サザンプレックス] [ミハマ7プレックス] [シネマパレット]]).group(:title)
+      theaters = %w[[シネマQ] [サザンプレックス] [ミハマ7プレックス] [シネマパレット]]
+      movies_from_titles(select(:title).filter(:theater => theaters).group(:title).all)
     end
 
     def sakurazaka
-      filter(:theater => '[桜坂劇場]').group(:title)
+      movies_from_titles(select(:title).filter(:theater => '[桜坂劇場]').group(:title).all)
     end
 
     def showtime(id)
       ENV['TZ'] = 'Asia/Tokyo'
       filter({:title => self[id].title} & (:start > Time.now.strftime('%H:%M')))
+    end
+
+    private
+
+    def movies_from_titles(titles)
+      movies = []
+      titles.each do |t|
+        movies << filter(:title => t.title).first
+      end
     end
   end
 
