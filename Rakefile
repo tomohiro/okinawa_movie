@@ -1,4 +1,4 @@
-require 'cron/okinawa_movies'
+require 'lib/cron/okinawa_movies'
 
 desc 'Okinawa movie showtime update.'
 task :migrate do

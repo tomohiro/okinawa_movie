@@ -1,6 +1,8 @@
-require 'cron/okinawa_movies.rb'
+require 'lib/cron/okinawa_movies.rb'
 
 desc 'Heroku Cron Tasks'
 task :cron => :environment do
-  OkinawaMovies.migrate
+  if Time.now.hour == 1
+    OkinawaMovies.migrate
+  end
 end
