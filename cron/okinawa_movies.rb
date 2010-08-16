@@ -32,8 +32,8 @@ class OkinawaMovies
 
         info.each do |time|
           Movie.create({
-            :title   => showtime[:title],
-            :theater => theater,
+            :title   => showtime[:title].toutf8,
+            :theater => theater.toutf8,
             :poster  => image,
             :url     => showtime[:source_url],
             :start   => time.split([0XFF5E].pack('U'))[0],
