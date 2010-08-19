@@ -32,7 +32,6 @@ get '/m' do
   haml :mobile
 end
 
-get '/cron' do
-  require 'cron/okinawa_movies.rb'
-  OkinawaMovies.migrate
+get '/feed.xml' do
+  File.open('tmp/feed.xml').read
 end

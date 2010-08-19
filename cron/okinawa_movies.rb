@@ -63,7 +63,7 @@ class OkinawaMovies
       end
     end
 
-    File.open('public/feed.xml', 'w') do |f|
+    File.open('tmp/feed.xml', 'w') do |f|
       f.write(rss)
     end
   end
