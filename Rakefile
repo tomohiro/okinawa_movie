@@ -8,6 +8,6 @@ task :cron do
   puts "Running migrate start #{Time.now.strftime('%Y/%m/%d %H:%M:%S')}..."
   okinawa_movies = OkinawaMovies.new
   okinawa_movies.migrate
-  #okinawa_movies.rss
+  okinawa_movies.rss
   puts "Running migrate end #{Time.now.strftime('%Y/%m/%d %H:%M:%S')}..."
 end
