@@ -17,10 +17,6 @@ class OkinawaMovies
     ]
   end
 
-  def self.migrate
-    new.migrate
-  end
-
   def migrate(reset = true)
     Movie.reset if reset
 
@@ -45,12 +41,8 @@ class OkinawaMovies
     end
   end
 
-  def self.rss
-    new.rss
-  end
-
   def rss 
-    RSS::Maker.make('2.0') do |maker|
+    rss = RSS::Maker.make('2.0') do |maker|
       maker.channel.about = 'http://okinawa-movie.heroku.com/feed.xml'
       maker.channel.title = '沖縄県映画上映時間一覧'
       maker.channel.description = '沖縄県内の映画の上映時間を配信しています'
@@ -69,6 +61,10 @@ class OkinawaMovies
           item.date = Time.now
         end
       end
+    end
+
+    File.open('public/feed.xml', 'w') do |f|
+      f.write(rss)
     end
   end
 
@@ -119,9 +115,4 @@ class OkinawaMovies
 
     'http://www.google.com' + image.attribute('src').value rescue 'http://www.google.com/movies/image?size=100x150'
   end
-end
-
-if __FILE__ == $0
-  OkinawaMovies.migrate
-  puts OkinawaMovies.rss
 end
