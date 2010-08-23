@@ -33,5 +33,5 @@ get '/m' do
 end
 
 get '/feed.xml' do
-  File.open('tmp/feed.xml').read
+  open('tmp/feed.xml').read
 end
