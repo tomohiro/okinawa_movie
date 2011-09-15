@@ -1,3 +1,5 @@
+$: << './'
+
 require 'cron/okinawa_movies'
 
 desc 'Okinawa movie showtime update.'

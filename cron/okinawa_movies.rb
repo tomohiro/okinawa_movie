@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding:utf-8
 
 require 'open-uri'
 require 'rss'
@@ -7,9 +8,7 @@ require 'nokogiri'
 
 require 'model/movie.rb'
 
-$KCODE = 'u'
-
-class OkinawaMovies 
+class OkinawaMovies
   def initialize
     @theaters_uri = [
       'http://www.startheaters.jp/schedule',

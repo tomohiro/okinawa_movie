@@ -4,7 +4,7 @@ require 'haml'
 
 require 'model/movie'
 
-set :haml, {:format => :html5}
+set :haml, { :format => :html5 }
 
 get '/' do
   @startheaters = Movie.startheaters
@@ -13,23 +13,12 @@ get '/' do
   haml :index
 end
 
-get '/showtime/:id' do
-  @title = Movie[params[:id]].title
-  @poster = Movie[params[:id]].poster
-  @movie = Movie.showtime(params[:id])
+get '/showtime/:id' do |id|
+  @title  = Movie[id].title
+  @poster = Movie[id].poster
+  @movie  = Movie.showtime id
 
   haml :showtime
-end
-
-get '/author' do
-  haml :author
-end
-
-get '/m' do
-  @movies = Movie.group(:title)
-
-  set :haml, {:format => :html4}
-  haml :mobile
 end
 
 get '/feed.xml' do

@@ -8,7 +8,7 @@
     %link(rel='shortcut icon' href='favicon.ico')
     %link(rel='stylesheet' media='screen' href='stylesheets/iphone.css')
     %script(src='scripts/iphone.js')
-    %script(src='/scripts/google-analytics.js')
+    %script(src='scripts/google-analytics.js')
 
   %body
     %div#header
@@ -25,11 +25,6 @@
       - @sakurazaka.each do |movie|
         %li.arrow
           %a(href="showtime/#{movie.id}")= movie.title
-
-    %h1 About the author
-    %ul
-      %li.arrow
-        %a(href="author") Author
 
     %p
       %strong powered by
