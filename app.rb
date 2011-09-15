@@ -13,6 +13,10 @@ get '/' do
   haml :index
 end
 
+get '/test' do
+  puts 'test'
+end
+
 get '/showtime/:id' do |id|
   @title  = Movie[id].title
   @poster = Movie[id].poster
