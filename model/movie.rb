@@ -28,13 +28,13 @@ class Movie < Sequel::Model
     end
 
     def startheaters
-      return all
-      theaters = %w[[シネマQ] [サザンプレックス] [ミハマ7プレックス] [シネマパレット]]
-      select(:id, :title).filter(:theater => theaters).group(:title).all
+      # url: http://www.startheaters.jp/schedule
+      select(:id, :title).filter(:url.like('%star%')).group(:title).all
     end
 
     def sakurazaka
-      select(:id, :title).filter(:theater => '[桜坂劇場]').group(:title).all
+      # url: http://www.google.com/movies?tid=3d1a4be489681836&near=%E9%82%A3%E8%A6%87%E5%B8%82
+      select(:id, :title).filter(:url.like('%google%')).group(:title).all
     end
 
     def showtime(id)
