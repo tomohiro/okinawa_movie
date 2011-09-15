@@ -10,11 +10,7 @@ get '/' do
   @startheaters = Movie.startheaters
   @sakurazaka   = Movie.sakurazaka
 
-  haml :index
-end
-
-get '/test' do
-  puts 'test'
+  #haml :index
 end
 
 get '/showtime/:id' do |id|
