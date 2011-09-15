@@ -10,12 +10,13 @@ get '/' do
   @startheaters = Movie.startheaters
   @sakurazaka   = Movie.sakurazaka
 
-  #haml :index
+  haml :index
 end
 
-get '/showtime/:id' do |id|
-  @title  = Movie[id].title
-  @poster = Movie[id].poster
+get '/showtime/:id'
+  movie   = Movie[id]
+  @title  = movie.title
+  @poster = movie.poster
   @movie  = Movie.showtime id
 
   haml :showtime
