@@ -30,7 +30,7 @@ class Movie < Sequel::Model
 
     def startheaters
       # url: http://www.startheaters.jp/schedule
-      filter("url LIKE '%startheaters%'").group_and_count(:id, :title)
+      distinct(:title).filter("url LIKE '%startheaters%'")
     end
 
     def sakurazaka
