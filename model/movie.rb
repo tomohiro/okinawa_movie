@@ -2,9 +2,10 @@
 
 require 'kconv'
 require 'sequel'
+require 'logger'
 
 Sequel::Model.plugin :schema
-Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'))
+Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'), :logger => Logger.new('log/db.log'))
 
 class Movie < Sequel::Model
   class << self
@@ -29,7 +30,7 @@ class Movie < Sequel::Model
 
     def startheaters
       # url: http://www.startheaters.jp/schedule
-      select('min(id)', :id, :title).filter("url LIKE '%startheaters%'").group(:title)
+      filter("url LIKE '%startheaters%'").group_and_count(:id, :title)
     end
 
     def sakurazaka
