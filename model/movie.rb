@@ -2,7 +2,6 @@
 
 require 'kconv'
 require 'sequel'
-require 'logger'
 
 Sequel::Model.plugin :schema
 Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'))
@@ -29,11 +28,13 @@ class Movie < Sequel::Model
     end
 
     def startheaters
+      return all
       theaters = %w[[シネマQ] [サザンプレックス] [ミハマ7プレックス] [シネマパレット]]
       select(:id, :title).filter(:theater => theaters).group(:title).all
     end
 
     def sakurazaka
+      return all
       select(:id, :title).filter(:theater => '[桜坂劇場]').group(:title).all
     end
 
