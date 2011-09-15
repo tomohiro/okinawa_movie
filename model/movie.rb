@@ -34,7 +34,6 @@ class Movie < Sequel::Model
     end
 
     def sakurazaka
-      return all
       select(:id, :title).filter(:theater => '[桜坂劇場]').group(:title).all
     end
 
