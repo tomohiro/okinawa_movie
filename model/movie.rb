@@ -2,10 +2,9 @@
 
 require 'kconv'
 require 'sequel'
-require 'logger'
 
 Sequel::Model.plugin :schema
-Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'), :logger => Logger.new('log/db.log'))
+Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'))
 
 class Movie < Sequel::Model
   class << self
@@ -30,15 +29,15 @@ class Movie < Sequel::Model
 
     def startheaters
       # url: http://www.startheaters.jp/schedule
-      distinct(:title).filter("url LIKE '%startheaters%'")
+      distinct(:title).grep(:url, '%startheaters%').order(:title)
     end
 
     def sakurazaka
       # url: http://www.google.com/movies?tid=3d1a4be489681836&near=%E9%82%A3%E8%A6%87%E5%B8%82
-      filter "url LIKE '%google%'"
+      grep(:url, '%google%').order(:title)
     end
 
-    def showtime(id)
+    def showtime id
       ENV['TZ'] = 'Asia/Tokyo'
       filter({ :title => self[id].title }, ['start > ?', Time.now.strftime('%H:%M')])
     end
