@@ -30,13 +30,13 @@ class Movie < Sequel::Model
     def startheaters
       # url: http://www.startheaters.jp/schedule
       #select(:id, :title).filter(:url.like('%star%')).group(:title).all
-      return group(:title).all
+      return self.group(:title).all
     end
 
     def sakurazaka
       # url: http://www.google.com/movies?tid=3d1a4be489681836&near=%E9%82%A3%E8%A6%87%E5%B8%82
       #select(:id, :title).filter(:url.like('%google%')).group(:title).all
-      return group(:title).all
+      return self.group(:title).all
     end
 
     def showtime(id)
