@@ -3,31 +3,35 @@
   %head
     %title 沖縄映画上映時間一覧
     %meta(charset='UTF-8')
-    %meta(name='viewport' content='width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    %meta(name='viewport' content='width=device-width; initial-scale=1;')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
     %link(rel='shortcut icon' href='/favicon.ico')
-    %link(rel='stylesheet' media='screen' href='/stylesheets/iphone.css')
-    %script(src='/scripts/iphone.js')
+    %link(rel='stylesheet' media='screen' href='http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css')
+    %script(src='http://code.jquery.com/jquery-1.6.2.min.js')
+    %script(src='http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js')
     %script(src='/scripts/google-analytics.js')
 
   %body
-    %div#header
-      %h1 上映作品
+    #page{ 'data-role' => :page }
+      #header{ 'data-role' => :header }
+        %h1 上映作品
 
-    %h1 スターシアターズ
-    %ul
-      - @startheaters.each do |movie|
-        %li.arrow
-          %a(href="showtime/#{movie.id}")= movie.title
+      #content{ 'data-role' => :content }
+        %ul{ 'data-role' => :listview, 'data-inset' => :true, 'data-divider-theme' => :b }
+          %li{ 'data-role' => 'list-divider' } スターシアターズ
+          - @startheaters.each do |movie|
+            %li
+              %a(href="/showtime/#{movie.id}")= movie.title
 
-    %h1 桜坂劇場
-    %ul
-      - @sakurazaka.each do |movie|
-        %li.arrow
-          %a(href="showtime/#{movie.id}")= movie.title
+        %ul{ 'data-role' => :listview, 'data-inset' => :true, 'data-divider-theme' => :b }
+          %li{ 'data-role' => 'list-divider' } 桜坂劇場
+          - @sakurazaka.each do |movie|
+            %li
+              %a(href="/showtime/#{movie.id}")= movie.title
 
-    %p
-      %strong powered by
-      %a(href='http://heroku.com') Heroku
-      %a(href='http://www.sinatrarb.com/intro-jp.html') Sinatra
-      %a(href='http://code.google.com/p/iphone-universal') UiUIKit
+      #footer{ 'data-role' => :footer }
+        %p
+          %strong powered by
+          %a(href='http://heroku.com') Heroku
+          %a(href='http://www.sinatrarb.com') Sinatra
+          %a(href='http://jquerymobile.com') jQuery Mobile

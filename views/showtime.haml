@@ -3,33 +3,37 @@
   %head
     %title= "#{@title} - 沖縄映画上映時間一覧"
     %meta(charset='UTF-8')
-    %meta(name='viewport' content='width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    %meta(name='viewport' content='width=device-width; initial-scale=1;')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
     %link(rel='shortcut icon' href='/favicon.ico')
-    %link(rel='stylesheet' media='screen' href='/stylesheets/iphone.css')
-    %script(src='/scripts/iphone.js')
+    %link(rel='stylesheet' media='screen' href='http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css')
+    %script(src='http://code.jquery.com/jquery-1.6.2.min.js')
+    %script(src='http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js')
     %script(src='/scripts/google-analytics.js')
 
-  %body#plastic
-    %div#header
-      %h1= @title
-      %a#backButton(href='/') Back
+  %body
+    #page{ 'data-role' => :page }
+      #header{ 'data-role' => :header }
+        %h1 上映時間
+        %a(href='/' data-icon='back') Back
 
-    %ul
-      %li.image
-        %img(src='#{@poster}')
+      #content{ 'data-role' => :content }
+        %center
+          %h3= @title
+          %img(src='#{@poster}')
 
-      - if @movie.count == 0
-        %li 本日の上映は終了しました
-      - else
-        - @movie.each do |showtime|
-          %li
-            %a(href='#')
-              = "#{showtime.theater} #{showtime.start}"
-              %small= showtime.end
+        %ul{ 'data-role' => :listview, 'data-inset' => :true }
+          - if @movie.count == 0
+            %li 本日の上映は終了しました
+          - else
+            - @movie.each do |showtime|
+              %li
+                = "#{showtime.theater} #{showtime.start}"
+                %small= showtime.end
 
-    %p
-      %strong powered by
-      %a(href='http://heroku.com') Heroku
-      %a(href='http://www.sinatrarb.com') Sinatra
-      %a(href='http://code.google.com/p/iphone-universal') UiUIKit
+      #footer{ 'data-role' => :footer }
+        %p
+          %strong powered by
+          %a(href='http://heroku.com') Heroku
+          %a(href='http://www.sinatrarb.com') Sinatra
+          %a(href='http://jquerymobile.com') jQuery Mobile
