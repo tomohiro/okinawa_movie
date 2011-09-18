@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= "#{@title} - 沖縄映画上映時間一覧"
+    %title= "#{@movie.title} - 沖縄映画上映時間一覧"
     %meta(charset='UTF-8')
     %meta(name='viewport' content='width=device-width; initial-scale=1;')
     %meta(name='google-site-verification' content='tDZ9fuKpneSTeb3dDYJEK8rkFSVoyR9WBg78M3g8QwI')
@@ -19,14 +19,14 @@
 
       #content{ 'data-role' => :content }
         %center
-          %h3= @title
-          %img(src='#{@poster}')
+          %h3= @movie.title
+          %img(src='#{@movie.poster}')
 
         %ul{ 'data-role' => :listview, 'data-inset' => :true }
-          - if @movie.count == 0
+          - if @movie.showtimes.count == 0
             %li 本日の上映は終了しました
           - else
-            - @movie.each do |showtime|
+            - @movie.showtimes.each do |showtime|
               %li
                 = "#{showtime.theater} #{showtime.start}"
                 %small= showtime.end

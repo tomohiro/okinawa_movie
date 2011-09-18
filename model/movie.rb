@@ -37,12 +37,13 @@ class Movie < Sequel::Model
       grep(:url, '%google%').order(:title)
     end
 
-    def showtime id
-      ENV['TZ'] = 'Asia/Tokyo'
-      filter({ :title => self[id].title }, ['start > ?', Time.now.strftime('%H:%M')])
-    end
-
   end
+
+  def showtimes
+    ENV['TZ'] = 'Asia/Tokyo'
+    Movie.filter({ :title => Movie[self.id].title }, ['start > ?', Time.now.strftime('%H:%M')])
+  end
+
 
   unless table_exists?
     setup
