@@ -4,5 +4,8 @@ gem 'heroku'
 gem 'sinatra'
 gem 'haml'
 gem 'sequel'
-gem 'sqlite3-ruby'
 gem 'nokogiri'
+
+group :development do
+  gem 'sqlite3-ruby'
+end
