@@ -21,8 +21,7 @@ Sinatra on Heroku で運用している Web サービス。
 Requirements
 -------------------------------------------------------------------------------
 
-- RVM
-- Ruby 1.9.2+
+- Ruby 1.9.3+
 - RubyGems
     - Rake
     - Bundler
@@ -34,8 +33,11 @@ Author
 [@Tomohiro, TAIRA](http://twitter.com/Tomohiro)
 
 
-LICENSE
--------------------------------------------------------------------------------
+---
 
-This project is dual licensed under the MAHALO license or GPL Version 2 licenses.
+LICENSE
+--------------------------------------------------------------------------------
+
+&copy; 2012 Tomohiro, TAIRA.
+This project is licensed under the MIT license.
 See LICENSE for details.
