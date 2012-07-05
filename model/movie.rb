@@ -43,7 +43,6 @@ class Movie < Sequel::Model
   end
 
   def showtimes
-    ENV['TZ'] = 'Asia/Tokyo'
     Movie.filter({ :title => Movie[self.id].title }, ['start > ?', Time.now.strftime('%H:%M')])
   end
 
