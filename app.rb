@@ -18,7 +18,3 @@ get '/showtime/:id' do |id|
 
   haml :showtime
 end
-
-get '/feed.xml' do
-  open('tmp/feed.xml').read
-end
