@@ -7,6 +7,10 @@ gem 'haml'
 gem 'sequel'
 gem 'nokogiri'
 
+group :production do
+  gem 'pg'
+end
+
 group :development do
   gem 'sqlite3'
   gem 'foreman'

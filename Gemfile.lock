@@ -12,6 +12,7 @@ GEM
     mini_portile (0.5.2)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
@@ -35,6 +36,7 @@ DEPENDENCIES
   foreman
   haml
   nokogiri
+  pg
   sequel
   sinatra
   sqlite3
