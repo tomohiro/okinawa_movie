@@ -7,7 +7,6 @@ Sequel::Model.plugin :schema
 Sequel.connect((ENV['DATABASE_URL'] || 'sqlite://db/movies.db'))
 
 class Movie < Sequel::Model
-
   class << self
     def setup
       set_schema do
@@ -18,7 +17,6 @@ class Movie < Sequel::Model
         text :url
         text :start
         text :end
-        timestamp :date
       end
     end
 
@@ -29,7 +27,7 @@ class Movie < Sequel::Model
     end
 
     # Get movie titles from the STAR THEATERS.
-    # url: http://www.startheaters.jp/schedule
+    # url: http://www.startheaters.jp/now_showing.html
     def startheaters
       distinct(:title).grep(:url, '%startheaters%').order(:title)
     end
@@ -39,7 +37,6 @@ class Movie < Sequel::Model
     def sakurazaka
       grep(:url, '%google%').order(:title)
     end
-
   end
 
   def showtimes
@@ -50,5 +47,4 @@ class Movie < Sequel::Model
     setup
     create_table
   end
-
 end
