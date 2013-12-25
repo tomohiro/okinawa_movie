@@ -35,7 +35,7 @@ class Movie < Sequel::Model
     # Get movie titles from the Sakurazaka.
     # url: http://www.google.com/movies?tid=3d1a4be489681836&near=%E9%82%A3%E8%A6%87%E5%B8%82
     def sakurazaka
-      grep(:url, '%google%').order(:title)
+      distinct(:title).grep(:url, '%google%').order(:title)
     end
   end
 
