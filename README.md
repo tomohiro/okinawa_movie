@@ -15,29 +15,20 @@ Sinatra on Heroku で運用している Web サービス。
 ### Link
 
 - [for iPhone/Android](http://okinawa-movie.heroku.com)
-- [RSS Feed](http://okinawa-movie.heroku.com/feed.xml)
 
 
 Requirements
 -------------------------------------------------------------------------------
 
-- Ruby 1.9.3+
+- Ruby 2.0.0
 - RubyGems
     - Rake
     - Bundler
 
 
-Author
--------------------------------------------------------------------------------
-
-[@Tomohiro, TAIRA](http://twitter.com/Tomohiro)
-
-
----
-
 LICENSE
 --------------------------------------------------------------------------------
 
-&copy; 2012 Tomohiro, TAIRA.
+&copy; 2010 - 2013 Tomohiro TAIRA.
 This project is licensed under the MIT license.
 See LICENSE for details.
