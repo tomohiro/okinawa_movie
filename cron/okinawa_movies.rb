@@ -40,33 +40,6 @@ class OkinawaMovies
     end
   end
 
-  def rss 
-    rss = RSS::Maker.make('2.0') do |maker|
-      maker.channel.about = 'http://okinawa-movie.heroku.com/feed.xml'
-      maker.channel.title = '沖縄県映画上映時間一覧'
-      maker.channel.description = '沖縄県内の映画の上映時間を配信しています'
-      maker.channel.link = 'http://okinawa-movie.heroku.com/'
-
-      maker.image.title = maker.channel.title
-      maker.image.url = 'http://okinawa-movie.heroku.com/apple-touch-icon.png'
-
-      get_showtime .each do |movie|
-        maker.items.new_item do |item|
-          item.link = movie[:link]
-          item.title = movie[:title]
-          item.description = movie[:time]
-          item.source.url = movie[:source_url]
-          item.source.content = movie[:source_content]
-          item.date = Time.now
-        end
-      end
-    end
-
-    File.open('tmp/feed.xml', 'w') do |f|
-      f.write(rss)
-    end
-  end
-
   def get_showtime
     results = []
 
