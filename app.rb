@@ -14,7 +14,7 @@ get '/' do
 end
 
 get '/showtime/:id' do |id|
-  @movie   = Movie[id]
+  @movie = Movie[id]
 
   haml :showtime
 end
