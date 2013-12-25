@@ -20,7 +20,6 @@ class OkinawaMovies
     Movie.reset if reset
 
     get_showtime.each do |showtime|
-      image = get_image(showtime[:title])
       showtime[:time].split('<br>').each do |info|
         info = info.split(' ')
         theater = info.shift
@@ -29,7 +28,7 @@ class OkinawaMovies
           Movie.create({
             :title   => showtime[:title].toutf8,
             :theater => theater.toutf8,
-            :poster  => image.toutf8,
+            :poster  => '',
             :url     => showtime[:source_url].toutf8,
             :start   => (time.split([0XFF5E].pack('U'))[0]).toutf8,
             :end     => (time.split([0XFF5E].pack('U'))[1]) || '',
@@ -78,13 +77,5 @@ class OkinawaMovies
     end
 
     results
-  end
-
-  def get_image(title)
-    query = "http://www.google.com/movies?q=#{URI.escape(title.gsub('ザ・', '').split(/ |・|\(|　/).first)}&near=#{URI.escape('那覇市')}"
-    html = Nokogiri::HTML(open(query).read)
-    image = html/'div.movie/div.header/div.img/img'
-
-    'http://www.google.com' + image.attribute('src').value rescue 'http://www.google.com/movies/image?size=100x150'
   end
 end
