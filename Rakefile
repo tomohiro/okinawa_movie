@@ -4,8 +4,6 @@ require 'cron/okinawa_movies'
 
 desc 'Update Okinawa movie showtimes'
 task :update do
-  ENV['TZ'] = 'Asia/Tokyo'
-
   puts 'Update movie showtime information.'
   puts "    ---> start #{Time.now.strftime('%Y/%m/%d %H:%M:%S')}"
   okinawa_movies = OkinawaMovies.new
