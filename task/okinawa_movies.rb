@@ -10,7 +10,7 @@ class OkinawaMovies
   def initialize
     @theaters_uri = [
       'http://www.startheaters.jp/now_showing.html',
-       "http://www.google.com/movies?tid=3d1a4be489681836&near=#{URI.escape('那覇市')}"
+      "http://www.google.com/movies?tid=3d1a4be489681836&near=#{URI.escape('那覇市')}"
     ]
   end
 
