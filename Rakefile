@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift(File.expand_path('..', __FILE__))
 
-require 'cron/okinawa_movies'
+require 'task/okinawa_movies'
 
 desc 'Update Okinawa movie showtimes'
 task :update do
