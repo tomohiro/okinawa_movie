@@ -20,7 +20,7 @@ Sinatra on Heroku で運用している Web サービス。
 Requirements
 -------------------------------------------------------------------------------
 
-- Ruby 2.0.0
+- Ruby 2.1.2
 - RubyGems
     - Rake
     - Bundler
