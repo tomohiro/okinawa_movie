@@ -29,6 +29,6 @@ Requirements
 LICENSE
 --------------------------------------------------------------------------------
 
-&copy; 2010 - 2013 Tomohiro TAIRA.
+&copy; 2010 - 2014 Tomohiro TAIRA.
 This project is licensed under the MIT license.
 See LICENSE for details.
