@@ -1,6 +1,8 @@
 沖縄県映画上映時間一覧
 ================================================================================
 
+[![Project Status](https://stillmaintained.com/Tomohiro/okinawa_movie.png)](https://stillmaintained.com/Tomohiro/okinawa_movie)
+
 
 Overview
 --------------------------------------------------------------------------------
